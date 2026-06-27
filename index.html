@@ -82,40 +82,47 @@ tailwind.config = {
 </header>
 
 <!-- ===== HERO ===== -->
-<section class="relative min-h-[100svh] flex items-center overflow-hidden grain">
-  <img src="img/hero-moto.jpg" alt="Motocicletta sportiva esposta al Garage Plinio Rigamonti di Lugano"
-       class="absolute inset-0 w-full h-full object-cover object-[72%_center] sm:object-[78%_center]" />
-  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 sm:via-ink/70 to-transparent"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40"></div>
+<section class="relative min-h-[100svh] flex flex-col overflow-hidden grain">
+  <!-- ambient red glow -->
+  <div class="pointer-events-none absolute right-[-12%] top-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[820px] max-h-[820px] rounded-full bg-rosso/15 blur-[130px]"></div>
 
-  <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 w-full pt-24">
-    <div class="max-w-2xl">
-      <p class="kicker text-[11.5px] text-rosso font-semibold mb-6 flex items-center gap-3">
-        <span class="w-8 redline"></span> Agenzia ufficiale · Lugano dal 1966
-      </p>
-      <h1 class="hl text-[15vw] sm:text-7xl lg:text-[5.4rem] text-cream">
-        La passione<br>per le <span class="text-rosso">due ruote</span>,<br>da tre generazioni.
-      </h1>
-      <p class="mt-7 text-[17px] sm:text-lg text-ash max-w-xl leading-relaxed">
-        Vendita di moto e scooter nuovi e d'occasione, officina, magazzino-ricambi
-        e assistenza. Una ditta familiare in Via Sorengo, a Lugano, dal 1982.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a href="#occasioni" class="inline-flex items-center gap-2 rounded-full bg-rosso hover:bg-rossoD transition px-7 py-3.5 text-[14.5px] font-semibold text-white">
-          Scopri le occasioni
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#contatti" class="inline-flex items-center gap-2 rounded-full border border-line hover:border-cream/60 transition px-7 py-3.5 text-[14.5px] font-semibold text-cream">
-          Dove siamo
-        </a>
+  <div class="relative z-10 flex-1 mx-auto max-w-7xl w-full px-5 lg:px-8 pt-[68px]">
+    <div class="grid lg:grid-cols-2 gap-4 lg:gap-8 items-center h-full">
+      <!-- text -->
+      <div class="order-2 lg:order-1 max-w-xl pb-6 lg:pb-0">
+        <p class="kicker text-[11px] sm:text-[11.5px] text-rosso font-semibold mb-5 flex items-center gap-3">
+          <span class="w-8 redline"></span> Agenzia ufficiale · Lugano dal 1966
+        </p>
+        <h1 class="hl text-[2.7rem] sm:text-6xl lg:text-[4.4rem] text-cream">
+          La passione<br>per le <span class="text-rosso">due ruote</span>.
+        </h1>
+        <p class="mt-6 text-[16px] sm:text-[17px] text-ash max-w-md leading-relaxed">
+          Vendita di moto e scooter, officina e assistenza. Una ditta familiare
+          in Via Sorengo, a Lugano, da tre generazioni.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3.5">
+          <a href="#occasioni" class="inline-flex items-center gap-2 rounded-full bg-rosso hover:bg-rossoD transition px-7 py-3.5 text-[14.5px] font-semibold text-white">
+            Scopri le occasioni
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contatti" class="inline-flex items-center gap-2 rounded-full border border-line hover:border-cream/60 transition px-7 py-3.5 text-[14.5px] font-semibold text-cream">
+            Dove siamo
+          </a>
+        </div>
+      </div>
+      <!-- bike (full, never covered) -->
+      <div class="order-1 lg:order-2 relative flex items-center justify-center lg:justify-end">
+        <img src="img/hero-moto.jpg" alt="Motocicletta sportiva — Garage Plinio Rigamonti, Lugano"
+             class="w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[560px] max-h-[32vh] lg:max-h-[62vh] object-contain"
+             style="-webkit-mask-image:radial-gradient(115% 115% at 50% 50%,#000 62%,transparent 92%);mask-image:radial-gradient(115% 115% at 50% 50%,#000 62%,transparent 92%);" />
       </div>
     </div>
   </div>
 
   <!-- brand strip -->
-  <div class="absolute bottom-0 inset-x-0 z-10 border-t border-white/10 bg-ink/55 backdrop-blur-sm">
+  <div class="relative z-10 border-t border-white/10 bg-coal">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
-      <ul class="flex flex-wrap items-center justify-center sm:justify-between gap-x-8 gap-y-2 py-4 font-display font-700 tracking-tight text-[15px] sm:text-[18px] text-cream/85">
+      <ul class="flex flex-wrap items-center justify-center sm:justify-between gap-x-7 gap-y-1.5 py-4 font-display font-700 tracking-tight text-[14px] sm:text-[17px] text-cream/85">
         <li>YAMAHA</li><li class="text-rosso/40">·</li>
         <li>PIAGGIO</li><li class="text-rosso/40">·</li>
         <li>VESPA</li><li class="text-rosso/40">·</li>
@@ -205,14 +212,19 @@ tailwind.config = {
   <div class="mx-auto max-w-7xl px-5 lg:px-8">
     <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
 
-      <!-- left: image -->
+      <!-- left: officina panel (typographic, no photo) -->
       <div class="lg:col-span-5 reveal">
-        <div class="relative h-full min-h-[340px] rounded-3xl overflow-hidden border border-line">
-          <img src="img/officina.jpg" alt="Officina del Garage Rigamonti: manutenzione di una moto" class="absolute inset-0 w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent"></div>
-          <div class="absolute bottom-6 left-6 right-6">
-            <p class="kicker text-[10.5px] text-rosso font-semibold mb-2">Officina propria</p>
-            <p class="font-display font-700 text-xl text-cream leading-tight">Meccanici diplomati, assistenza anche su strada e a domicilio.</p>
+        <div class="relative h-full min-h-[340px] rounded-3xl overflow-hidden border border-line bg-ink p-9 flex flex-col justify-between">
+          <div class="pointer-events-none absolute -top-16 -right-16 w-56 h-56 rounded-full bg-rosso/15 blur-[80px]"></div>
+          <div class="relative">
+            <p class="kicker text-[10.5px] text-rosso font-semibold mb-4">Officina propria</p>
+            <p class="font-display font-900 leading-none tracking-tightest text-[5.2rem] text-cream">1952</p>
+            <p class="mt-2 text-[13.5px] text-ash">L'anno in cui tutto è cominciato, a Lugano.</p>
+          </div>
+          <div class="relative mt-10 space-y-4">
+            <div class="flex items-center gap-3 text-cream"><span class="w-6 redline"></span><span class="text-[15px]">Meccanici di motocicli diplomati</span></div>
+            <div class="flex items-center gap-3 text-cream"><span class="w-6 redline"></span><span class="text-[15px]">Assistenza su strada e a domicilio</span></div>
+            <div class="flex items-center gap-3 text-cream"><span class="w-6 redline"></span><span class="text-[15px]">Furgone attrezzato di tutto punto</span></div>
           </div>
         </div>
       </div>
