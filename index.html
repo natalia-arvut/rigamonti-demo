@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Garage Plinio Rigamonti SA — Moto e Scooter a Lugano dal 1966 · Yamaha · Piaggio · Vespa · Gilera</title>
+<meta name="description" content="Garage Plinio Rigamonti SA, Via Sorengo 15, Lugano. Agenzia ufficiale Yamaha, Piaggio, Vespa, Gilera e MBK. Vendita moto e scooter nuovi e d'occasione, officina, ricambi e assistenza dal 1966." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Archivo', 'sans-serif'],
+        sans: ['Hanken Grotesk', 'sans-serif'],
+      },
+      colors: {
+        ink:    '#0b0b0e',
+        coal:   '#111116',
+        panel:  '#16161c',
+        steel:  '#23232c',
+        line:   '#2c2c36',
+        rosso:  '#e10600',
+        rossoD: '#b00400',
+        cream:  '#f4f1ea',
+        ash:    '#a3a2ad',
+      },
+      letterSpacing: { tightest: '-0.04em' },
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0b0b0e; }
+  .kicker { letter-spacing:.28em; text-transform:uppercase; }
+  .hl { font-family:'Archivo',sans-serif; font-weight:900; letter-spacing:-0.035em; line-height:.94; }
+  .grain:before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:radial-gradient(120% 120% at 80% 10%, rgba(225,6,0,.10), transparent 55%);
+  }
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1;transform:none;}
+  .redline{height:2px;background:linear-gradient(90deg,#e10600,transparent);}
+  .card-hover{transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s,background .4s;}
+  .card-hover:hover{transform:translateY(-6px);border-color:#e10600;background:#1a1a21;}
+  .navlink{position:relative;}
+  .navlink:after{content:"";position:absolute;left:0;bottom:-4px;height:1.5px;width:0;background:#e10600;transition:width .35s;}
+  .navlink:hover:after{width:100%;}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none;} html{scroll-behavior:auto;} }
+</style>
+</head>
+<body class="bg-ink text-cream font-sans antialiased selection:bg-rosso selection:text-white">
+
+<!-- ===== HEADER ===== -->
+<header id="top" class="fixed top-0 inset-x-0 z-50 transition-all duration-500" data-nav>
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="flex items-center justify-between h-[68px]">
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-rosso shadow-[0_0_12px_#e10600]"></span>
+        <span class="font-display font-800 tracking-tightest text-[15px] sm:text-[17px] leading-none">
+          GARAGE PLINIO RIGAMONTI <span class="text-rosso">SA</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-medium text-ash">
+        <a href="#chisiamo"  class="navlink hover:text-cream transition">Chi siamo</a>
+        <a href="#marche"    class="navlink hover:text-cream transition">Marche</a>
+        <a href="#servizi"   class="navlink hover:text-cream transition">Servizi</a>
+        <a href="#occasioni" class="navlink hover:text-cream transition">Occasioni</a>
+        <a href="#cataloghi" class="navlink hover:text-cream transition">Cataloghi</a>
+        <a href="#contatti"  class="navlink hover:text-cream transition">Contatti</a>
+      </nav>
+      <a href="tel:+41919660049" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-rosso hover:bg-rossoD transition px-5 py-2.5 text-[13.5px] font-semibold text-white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        091 966 00 49
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="relative min-h-[100svh] flex items-center overflow-hidden grain">
+  <img src="img/hero-moto.jpg" alt="Motocicletta sportiva esposta al Garage Plinio Rigamonti di Lugano"
+       class="absolute inset-0 w-full h-full object-cover object-[72%_center] sm:object-[78%_center]" />
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 sm:via-ink/70 to-transparent"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40"></div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 w-full pt-24">
+    <div class="max-w-2xl">
+      <p class="kicker text-[11.5px] text-rosso font-semibold mb-6 flex items-center gap-3">
+        <span class="w-8 redline"></span> Agenzia ufficiale · Lugano dal 1966
+      </p>
+      <h1 class="hl text-[15vw] sm:text-7xl lg:text-[5.4rem] text-cream">
+        La passione<br>per le <span class="text-rosso">due ruote</span>,<br>da tre generazioni.
+      </h1>
+      <p class="mt-7 text-[17px] sm:text-lg text-ash max-w-xl leading-relaxed">
+        Vendita di moto e scooter nuovi e d'occasione, officina, magazzino-ricambi
+        e assistenza. Una ditta familiare in Via Sorengo, a Lugano, dal 1982.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#occasioni" class="inline-flex items-center gap-2 rounded-full bg-rosso hover:bg-rossoD transition px-7 py-3.5 text-[14.5px] font-semibold text-white">
+          Scopri le occasioni
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#contatti" class="inline-flex items-center gap-2 rounded-full border border-line hover:border-cream/60 transition px-7 py-3.5 text-[14.5px] font-semibold text-cream">
+          Dove siamo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- brand strip -->
+  <div class="absolute bottom-0 inset-x-0 z-10 border-t border-white/10 bg-ink/55 backdrop-blur-sm">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <ul class="flex flex-wrap items-center justify-center sm:justify-between gap-x-8 gap-y-2 py-4 font-display font-700 tracking-tight text-[15px] sm:text-[18px] text-cream/85">
+        <li>YAMAHA</li><li class="text-rosso/40">·</li>
+        <li>PIAGGIO</li><li class="text-rosso/40">·</li>
+        <li>VESPA</li><li class="text-rosso/40">·</li>
+        <li>GILERA</li><li class="text-rosso/40">·</li>
+        <li>MBK</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO / FIGURES ===== -->
+<section class="relative py-20 lg:py-28 bg-coal border-y border-line">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <p class="kicker text-[11px] text-rosso font-semibold mb-5">Il centro di Via Sorengo</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream mb-6">600&nbsp;mq dedicati<br>alle due ruote.</h2>
+        <p class="text-ash text-[16.5px] leading-relaxed">
+          Oltre all'officina e ai locali amministrativi, il centro dispone di un fornito
+          magazzino-ricambi e di tre zone espositive: due sale interne e un parco-moto esterno.
+          A farla da padrone sono loro, le due-ruote.
+        </p>
+      </div>
+      <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="reveal rounded-2xl border border-line bg-panel p-6">
+          <div class="font-display font-900 text-4xl text-rosso leading-none">1966</div>
+          <div class="mt-2 text-[13px] text-ash">L'inizio dell'attività in proprio</div>
+        </div>
+        <div class="reveal rounded-2xl border border-line bg-panel p-6">
+          <div class="font-display font-900 text-4xl text-cream leading-none">3</div>
+          <div class="mt-2 text-[13px] text-ash">Generazioni di meccanici diplomati</div>
+        </div>
+        <div class="reveal rounded-2xl border border-line bg-panel p-6">
+          <div class="font-display font-900 text-4xl text-cream leading-none">5</div>
+          <div class="mt-2 text-[13px] text-ash">Marche in agenzia ufficiale</div>
+        </div>
+        <div class="reveal rounded-2xl border border-line bg-panel p-6">
+          <div class="font-display font-900 text-4xl text-rosso leading-none">~80</div>
+          <div class="mt-2 text-[13px] text-ash">Moto e scooter, nuovi e d'occasione</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARCHE / AGENZIE ===== -->
+<section id="marche" class="relative py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 reveal">
+      <div>
+        <p class="kicker text-[11px] text-rosso font-semibold mb-4">Agenzie</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream">Le nostre marche</h2>
+      </div>
+      <p class="text-ash max-w-md text-[15.5px] leading-relaxed">
+        Agenzia ufficiale Yamaha, fin dagli anni della scalata dei costruttori giapponesi
+        al mercato europeo, come pure MBK e Piaggio – Vespa – Gilera.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <a href="https://www.yamaha-motor.ch/" target="_blank" rel="noopener" class="card-hover group rounded-2xl border border-line bg-panel p-7 flex flex-col justify-between min-h-[180px]">
+        <span class="font-display font-900 text-2xl tracking-tight text-cream group-hover:text-rosso transition">YAMAHA</span>
+        <span class="mt-6 text-[13px] text-ash flex items-center gap-2">Nuovi modelli <span class="text-rosso">→</span></span>
+      </a>
+      <a href="https://www.piaggio.ch/" target="_blank" rel="noopener" class="card-hover group rounded-2xl border border-line bg-panel p-7 flex flex-col justify-between min-h-[180px]">
+        <span class="font-display font-900 text-2xl tracking-tight text-cream group-hover:text-rosso transition">PIAGGIO</span>
+        <span class="mt-6 text-[13px] text-ash flex items-center gap-2">Nuovi modelli <span class="text-rosso">→</span></span>
+      </a>
+      <a href="https://www.vespa.ch/" target="_blank" rel="noopener" class="card-hover group rounded-2xl border border-line bg-panel p-7 flex flex-col justify-between min-h-[180px]">
+        <span class="font-display font-900 text-2xl tracking-tight text-cream group-hover:text-rosso transition">VESPA</span>
+        <span class="mt-6 text-[13px] text-ash flex items-center gap-2">Nuovi modelli <span class="text-rosso">→</span></span>
+      </a>
+      <a href="https://www.gilera.ch/" target="_blank" rel="noopener" class="card-hover group rounded-2xl border border-line bg-panel p-7 flex flex-col justify-between min-h-[180px]">
+        <span class="font-display font-900 text-2xl tracking-tight text-cream group-hover:text-rosso transition">GILERA</span>
+        <span class="mt-6 text-[13px] text-ash flex items-center gap-2">Nuovi modelli <span class="text-rosso">→</span></span>
+      </a>
+      <a href="https://www.yamaha-motor.ch/" target="_blank" rel="noopener" class="card-hover group rounded-2xl border border-line bg-panel p-7 flex flex-col justify-between min-h-[180px]">
+        <span class="font-display font-900 text-2xl tracking-tight text-cream group-hover:text-rosso transition">MBK</span>
+        <span class="mt-6 text-[13px] text-ash flex items-center gap-2">Nuovi modelli <span class="text-rosso">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVIZI ===== -->
+<section id="servizi" class="relative py-24 lg:py-32 bg-coal border-y border-line">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+
+      <!-- left: image -->
+      <div class="lg:col-span-5 reveal">
+        <div class="relative h-full min-h-[340px] rounded-3xl overflow-hidden border border-line">
+          <img src="img/officina.jpg" alt="Officina del Garage Rigamonti: manutenzione di una moto" class="absolute inset-0 w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6">
+            <p class="kicker text-[10.5px] text-rosso font-semibold mb-2">Officina propria</p>
+            <p class="font-display font-700 text-xl text-cream leading-tight">Meccanici diplomati, assistenza anche su strada e a domicilio.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: services -->
+      <div class="lg:col-span-7">
+        <p class="kicker text-[11px] text-rosso font-semibold mb-4 reveal">Cosa offriamo</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream mb-10 reveal">Tutto, da un unico indirizzo.</h2>
+        <div class="grid sm:grid-cols-2 gap-px bg-line rounded-2xl overflow-hidden border border-line">
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Vendita nuovo</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Moto e scooter nuovi fiammanti delle marche in agenzia, esposti nelle nostre sale.</p>
+          </div>
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Occasioni</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Un'ottantina tra moto e scooter, nuovi e d'occasione, nel parco-moto esterno e nelle sale interne.</p>
+          </div>
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Officina &amp; riparazioni</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Manutenzione e riparazione affidate a meccanici di motocicli diplomati, di generazione in generazione.</p>
+          </div>
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Magazzino-ricambi</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Un fornito magazzino di ricambi e accessori a disposizione del cliente.</p>
+          </div>
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Assistenza su strada</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Per l'assistenza su strada e a domicilio, un furgone attrezzato di tutto punto.</p>
+          </div>
+          <div class="bg-panel p-7 reveal">
+            <h3 class="font-display font-700 text-lg text-cream mb-2">Pneumatici &amp; accessori</h3>
+            <p class="text-[14.5px] text-ash leading-relaxed">Pneumatici, abbigliamento e accessori dei migliori marchi del settore (vedi cataloghi).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHI SIAMO / HERITAGE ===== -->
+<section id="chisiamo" class="relative py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+      <div class="lg:col-span-7 reveal">
+        <p class="kicker text-[11px] text-rosso font-semibold mb-4">Chi siamo</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream mb-8">Una storia di famiglia,<br>iniziata nel 1952.</h2>
+        <div class="space-y-5 text-[16px] text-ash leading-relaxed max-w-2xl">
+          <p>
+            Plinio Rigamonti, di Agra, è figura ben nota agli appassionati del settore.
+            Iniziò la carriera di apprendista nell'officina di un &laquo;centauro&raquo; luganese
+            altrettanto conosciuto, Bruno Besana, agli inizi degli Anni '50 — per la precisione nel 1952.
+          </p>
+          <p>
+            Diplomatosi meccanico di motocicli, nel '66 decise di tentare in proprio la sorte ed
+            inaugurò una piccola officina in via Lavizzari, a Lugano. Poi l'assunzione dell'Agenzia
+            Yamaha, sull'onda delle nuove tendenze. Una scalata felice, che permise al negozio di
+            estendere la cerchia di affezionati clienti.
+          </p>
+          <p>
+            Nel 1982 Plinio Rigamonti si trasferì in via Sorengo 15, sempre a Lugano, dove tutt'oggi
+            lo troviamo indaffarato tra raggi, pistoni, catene e sellini motociclistici. Con lui, la
+            nuova generazione dei figli <span class="text-cream font-semibold">Stefano</span> (classe 1961)
+            e <span class="text-cream font-semibold">Giorgio</span> (classe 1973), che pure hanno
+            intrapreso questa carriera e si sono diplomati lavorando alle dipendenze del padre.
+          </p>
+        </div>
+      </div>
+
+      <!-- timeline + archive photos -->
+      <div class="lg:col-span-5 reveal">
+        <div class="rounded-3xl border border-line bg-coal p-8">
+          <div class="flex gap-3 mb-8">
+            <img src="img/heritage-plinio.jpg" alt="Plinio Rigamonti" class="w-1/3 aspect-[3/4] object-cover rounded-lg border border-line grayscale-[.15] sepia-[.15]" />
+            <img src="img/heritage-stefano.jpg" alt="Stefano Rigamonti" class="w-1/3 aspect-[3/4] object-cover rounded-lg border border-line grayscale-[.15] sepia-[.15]" />
+            <img src="img/heritage-giorgio.jpg" alt="Giorgio Rigamonti" class="w-1/3 aspect-[3/4] object-cover rounded-lg border border-line grayscale-[.15] sepia-[.15]" />
+          </div>
+          <p class="text-[12px] text-ash/70 mb-7 italic">Dall'archivio di famiglia — Plinio, Stefano e Giorgio Rigamonti.</p>
+          <ul class="space-y-5">
+            <li class="flex gap-4"><span class="font-display font-900 text-rosso text-lg w-14 shrink-0">1952</span><span class="text-[14.5px] text-ash">Plinio inizia come apprendista a Lugano.</span></li>
+            <li class="flex gap-4"><span class="font-display font-900 text-rosso text-lg w-14 shrink-0">1966</span><span class="text-[14.5px] text-ash">Apre la sua prima officina in via Lavizzari.</span></li>
+            <li class="flex gap-4"><span class="font-display font-900 text-rosso text-lg w-14 shrink-0">1982</span><span class="text-[14.5px] text-ash">Il trasferimento nell'attuale sede di Via Sorengo 15.</span></li>
+            <li class="flex gap-4"><span class="font-display font-900 text-cream text-lg w-14 shrink-0">oggi</span><span class="text-[14.5px] text-ash">Tre generazioni di meccanici al servizio dei motociclisti.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OCCASIONI ===== -->
+<section id="occasioni" class="relative overflow-hidden">
+  <img src="img/scooter.jpg" alt="Scooter parcheggiato in un centro storico" class="absolute inset-0 w-full h-full object-cover object-center" />
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30"></div>
+  <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 py-24 lg:py-32">
+    <div class="max-w-xl reveal">
+      <p class="kicker text-[11px] text-rosso font-semibold mb-4">Occasioni</p>
+      <h2 class="hl text-4xl sm:text-5xl text-cream mb-6">Le nostre occasioni.</h2>
+      <p class="text-ash text-[16.5px] leading-relaxed mb-8">
+        Un'ottantina tra moto e scooter, nuovi fiammanti o d'occasione, vi aspettano nel parco-moto
+        esterno e nelle sale espositive. Sfogliate la selezione aggiornata dei veicoli disponibili.
+      </p>
+      <a href="https://www.commercio-moto.ch/plinio-rigamonti-sa-ti-lugano-besso/occasioni/1766/" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 rounded-full bg-rosso hover:bg-rossoD transition px-7 py-3.5 text-[14.5px] font-semibold text-white">
+        Entra nelle occasioni
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATALOGHI ===== -->
+<section id="cataloghi" class="relative py-24 lg:py-32 bg-coal border-y border-line">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+      <div>
+        <p class="kicker text-[11px] text-rosso font-semibold mb-4">Cataloghi</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream">Ricambi, abbigliamento<br>e accessori.</h2>
+      </div>
+      <p class="text-ash max-w-md text-[15.5px] leading-relaxed">
+        Lavoriamo con i migliori marchi del settore per ricambi, pneumatici, lubrificanti,
+        abbigliamento e accessori. Sfogliate i cataloghi dei nostri partner.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <a href="https://www.ixs.com/" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>iXS</span><span class="text-rosso text-sm">→</span></a>
+      <a href="https://www.motul.com/it/it" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>Motul</span><span class="text-rosso text-sm">→</span></a>
+      <a href="http://www.pneu-service.ch/" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>Pneu-Service</span><span class="text-rosso text-sm">→</span></a>
+      <a href="http://www.autotechnik.ch/" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>Autotechnik</span><span class="text-rosso text-sm">→</span></a>
+      <a href="http://www.hma.ch/" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>HMA</span><span class="text-rosso text-sm">→</span></a>
+      <a href="http://www.intercycle.com/" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>Cosmo / Intercycle</span><span class="text-rosso text-sm">→</span></a>
+      <a href="http://www.motochic.ch" target="_blank" rel="noopener" class="card-hover rounded-xl border border-line bg-panel px-6 py-7 font-display font-700 text-lg text-cream flex items-center justify-between"><span>Motochic</span><span class="text-rosso text-sm">→</span></a>
+      <div class="rounded-xl border border-dashed border-line/70 px-6 py-7 text-[13px] text-ash flex items-center">e altri partner del settore</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATTI ===== -->
+<section id="contatti" class="relative py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
+      <div class="lg:col-span-5 reveal">
+        <p class="kicker text-[11px] text-rosso font-semibold mb-4">Contatti</p>
+        <h2 class="hl text-4xl sm:text-5xl text-cream mb-10">Dove siamo.</h2>
+
+        <div class="space-y-8">
+          <div>
+            <p class="kicker text-[10.5px] text-ash mb-2">Indirizzo</p>
+            <p class="text-[17px] text-cream">Garage Plinio Rigamonti SA</p>
+            <p class="text-[16px] text-ash">Via Sorengo 15 · 6900 Lugano</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-8">
+            <div>
+              <p class="kicker text-[10.5px] text-ash mb-2">Telefono</p>
+              <a href="tel:+41919660049" class="text-[17px] text-cream hover:text-rosso transition">091 966 00 49</a>
+            </div>
+            <div>
+              <p class="kicker text-[10.5px] text-ash mb-2">E-mail</p>
+              <a href="mailto:info@motorigamonti.ch" class="text-[17px] text-cream hover:text-rosso transition">info@motorigamonti.ch</a>
+            </div>
+          </div>
+          <div>
+            <p class="kicker text-[10.5px] text-ash mb-3">Orari</p>
+            <div class="rounded-2xl border border-line bg-coal p-6 space-y-3">
+              <div class="flex justify-between text-[15px]">
+                <span class="text-cream font-medium">Lunedì – Venerdì</span>
+                <span class="text-ash">07.30–12.00 · 13.30–18.30</span>
+              </div>
+              <div class="h-px bg-line"></div>
+              <div class="flex justify-between text-[15px]">
+                <span class="text-cream font-medium">Sabato</span>
+                <span class="text-ash">07.30–12.00 · pom. su appuntamento</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 reveal">
+        <div class="h-full min-h-[380px] rounded-3xl overflow-hidden border border-line">
+          <iframe
+            title="Mappa Garage Plinio Rigamonti, Via Sorengo 15 Lugano"
+            class="w-full h-full min-h-[380px]"
+            style="filter:grayscale(.3) contrast(1.05);"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Via+Sorengo+15,+6900+Lugano&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="border-t border-line bg-coal">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-rosso"></span>
+        <span class="font-display font-800 tracking-tightest text-[15px]">GARAGE PLINIO RIGAMONTI <span class="text-rosso">SA</span></span>
+      </div>
+      <nav class="flex flex-wrap gap-x-7 gap-y-2 text-[13.5px] text-ash">
+        <a href="#chisiamo" class="hover:text-cream transition">Chi siamo</a>
+        <a href="#marche" class="hover:text-cream transition">Marche</a>
+        <a href="#servizi" class="hover:text-cream transition">Servizi</a>
+        <a href="#occasioni" class="hover:text-cream transition">Occasioni</a>
+        <a href="#cataloghi" class="hover:text-cream transition">Cataloghi</a>
+        <a href="#contatti" class="hover:text-cream transition">Contatti</a>
+      </nav>
+      <a href="tel:+41919660049" class="text-[14px] text-cream hover:text-rosso transition font-semibold">091 966 00 49</a>
+    </div>
+    <div class="mt-10 pt-7 border-t border-line flex flex-col sm:flex-row justify-between gap-3 text-[12.5px] text-ash/70">
+      <p>© <span id="yr"></span> Garage Plinio Rigamonti SA · Via Sorengo 15, 6900 Lugano · Agenzia Yamaha · Piaggio · Vespa · Gilera · MBK</p>
+      <p>Moto e scooter a Lugano dal 1966</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // scroll reveal (with safe fallback: always reveal even if observer misbehaves)
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    reveals.forEach(el=>io.observe(el));
+    setTimeout(()=>reveals.forEach(el=>el.classList.add('in')), 2200);
+  } else {
+    reveals.forEach(el=>el.classList.add('in'));
+  }
+  // nav bg on scroll
+  const nav = document.querySelector('[data-nav]');
+  const onScroll=()=>{ if(window.scrollY>40){nav.classList.add('bg-ink/90','backdrop-blur-md','border-b','border-line','shadow-lg');} else {nav.classList.remove('bg-ink/90','backdrop-blur-md','border-b','border-line','shadow-lg');} };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+</script>
+</body>
+</html>
